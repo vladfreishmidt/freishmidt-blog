@@ -1,3 +1,4 @@
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import type { Metadata } from "next";
@@ -37,6 +38,9 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body className={inter.className}>
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+        ) : null}
         <div className="bg-yellow-300 text-center text-black font-medium text-sm underline py-1">
           🇺🇦 Support Ukraine
         </div>
