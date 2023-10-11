@@ -25,8 +25,8 @@ const HomePage = () => {
       </section>
       {/* Photo grid */}
       <section className="mb-16">
-        <div className="flex gap-3">
-          <div className="w-1/3 flex gap-3 flex-col">
+        <div className="flex gap-2 md:gap-3">
+          <div className="w-1/3 flex gap-2 md:gap-3 flex-col">
             <Image
               src="/images/008.jpg"
               width={212}
@@ -44,9 +44,9 @@ const HomePage = () => {
               quality={100}
             />
           </div>
-          <div className="w-1/3 flex gap-3 flex-col">
+          <div className="w-1/3 flex gap-2 md:gap-3 flex-col">
             <Image
-              src="/images/001.jpg"
+              src="/images/007.jpg"
               width={212}
               height={160}
               alt="Vladyslav Freishmidt"
@@ -62,7 +62,7 @@ const HomePage = () => {
               quality={100}
             />
           </div>
-          <div className="w-1/3 flex gap-3 flex-col">
+          <div className="w-1/3 flex gap-2 md:gap-3 flex-col">
             <Image
               src="/images/006.jpg"
               width={212}
@@ -80,9 +80,9 @@ const HomePage = () => {
               quality={100}
             />
           </div>
-          <div className="w-1/3 flex gap-3 flex-col">
+          <div className="w-1/3 hidden gap-2 md:gap-3 flex-col md:flex">
             <Image
-              src="/images/007.jpg"
+              src="/images/001.jpg"
               width={212}
               height={320}
               alt="Vladyslav Freishmidt"
