@@ -19,14 +19,14 @@ export default function RootLayout({
 }) {
   const Header = () => {
     return (
-      <header className="my-16">
+      <header className="my-8 md:my-16">
         <Navigation />
       </header>
     );
   };
 
   const footer = (
-    <footer>
+    <footer className="mt-auto">
       <div className="border-t border-slate-400 mt-12 py-6 text-center text-gray-600">
         <h3 className="text-sm">
           Designed and Developed by Vladyslav Freishmidt © 2023
@@ -52,7 +52,7 @@ export default function RootLayout({
             </div>
           </a>
         </div>
-        <div className="mx-auto  max-w-2xl px-6">
+        <div className="flex flex-col h-full mx-auto max-w-2xl px-6">
           <Header />
           {children}
           {footer}
